@@ -118,7 +118,7 @@ curl -X POST http://127.0.0.1:8000/print/image \
 ### `POST /print/textfile`
 
 Prints an uploaded `.txt` or `.md` file as `multipart/form-data`. `.md` files are parsed before printing, including bold text (`**text**`) and Markdown images (`![alt](source)`).
-Supported Markdown image sources are local server paths, `file://`, `data:image/...`, and `http(s)` URLs.
+Supported Markdown image sources are `data:image/...`, and `http(s)` URLs.
 
 ```bash
 curl -X POST http://127.0.0.1:8000/print/textfile \
