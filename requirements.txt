@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-escpos
+Pillow
+pydantic-settings
+python-dotenv
+python-multipart
+pyusb
+qrcode
+python-barcode
