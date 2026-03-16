@@ -3,6 +3,7 @@ set -euo pipefail
 
 SERVICE_NAME="fastapi-escpos"
 INSTALL_DIR="/opt/${SERVICE_NAME}"
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SERVICE_USER="${SERVICE_NAME}"
 SERVICE_GROUP="${SERVICE_NAME}"
 HOST="0.0.0.0"
@@ -11,9 +12,6 @@ UPDATE_MODE=0
 SKIP_APT=0
 NO_ENABLE=0
 NO_START=0
-
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 usage() {
   cat <<'EOF'
