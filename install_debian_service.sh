@@ -129,6 +129,7 @@ install_system_packages() {
     libusb-1.0-0
     udev
     rsync
+    libjpeg-dev
   )
 
   log "Updating APT package indexes"
